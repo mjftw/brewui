@@ -17,8 +17,8 @@ class arrayGrid extends React.Component {
             <Container fluid>
                 {
                     arr2d.map((row, ridx) => {
-                        return <Row key={ridx}>{row.map((col, cidx, carr) => {
-                            return <Col key={ridx * carr.length + cidx}> {col}</Col>
+                        return <Row className='px-3' key={ridx}>{row.map((col, cidx, carr) => {
+                            return <Col className='py-3' key={ridx * carr.length + cidx}> {col}</Col>
                         }
                         )}</Row>
                     })
