@@ -14,7 +14,7 @@ class arrayGrid extends React.Component {
             arr2d.push(arr.splice(0, cols))
         }
         return (
-            <Container>
+            <Container fluid>
                 {
                     arr2d.map((row, ridx) => {
                         return <Row key={ridx}>{row.map((col, cidx, carr) => {
