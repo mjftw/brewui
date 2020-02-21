@@ -22,9 +22,11 @@ class cardGrid extends React.Component {
         return (
             <Card bg="light">
                 <Card.Header>
-                    <Button onClick={() => maximised ? this.unmaximiseCards() : this.maximiseCard(idx)}>
-                        {maximised ? <FaCompressArrowsAlt /> : <FaExpandArrowsAlt />}
-                    </Button>
+                    <div align='right'>
+                        <Button variant='info' onClick={() => maximised ? this.unmaximiseCards() : this.maximiseCard(idx)}>
+                            {maximised ? <FaCompressArrowsAlt /> : <FaExpandArrowsAlt />}
+                        </Button>
+                    </div>
                 </Card.Header>
                 <Card.Body>
                     {item}
