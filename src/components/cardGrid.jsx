@@ -20,7 +20,7 @@ class cardGrid extends React.Component {
     toCard(item, idx) {
         var maximised = this.state.maximised !== null;
         return (
-            <Card bg="light">
+            <Card bg='light' style={{ width: '18rem' }}>
                 <Card.Header>
                     <div align='right'>
                         <Button variant='info' onClick={() => maximised ? this.unmaximiseCards() : this.maximiseCard(idx)}>
@@ -28,10 +28,8 @@ class cardGrid extends React.Component {
                         </Button>
                     </div>
                 </Card.Header>
-                <Card.Body>
-                    {item}
-                </Card.Body>
-            </Card >
+                {item}
+            </ Card >
         );
     }
 

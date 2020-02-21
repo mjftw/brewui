@@ -4,10 +4,14 @@ import CardGrid from './components/cardGrid'
 
 class App extends React.Component {
     render() {
-        let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+        let arr = [];
+        for (var i = 0; i < 9; i++) {
+            var img = <img src={'https://picsum.photos/200?' + i} />;
+            arr.push(img);
+        }
 
         return (
-            <CardGrid arr={arr} rows={3} cols={2} />
+            <CardGrid arr={arr} rows={3} cols={3} />
         );
     }
 }
